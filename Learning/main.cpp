@@ -1,3 +1,4 @@
+//preprocessor directives
 #include <iostream>
 
 int main() {
@@ -12,11 +13,15 @@ int main() {
     // If multiple std::cout, prefer \n over std::endl (less flushes)
     //std::cout << "Hello world!" << std::endl;
 
-    //
     /*std::cout << "Enter a number: ";
     int x{};
     std::cin >> x;
     std::cout << "You entered " << x << '\n';*/
 
+    // undefined behavior
+    //int x;
+    //std::cout << x << '\n';
+
+    //side effect: an observable effect of an operator or function beyond producing a return value
     return 0;
 }
