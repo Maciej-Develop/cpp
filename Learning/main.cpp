@@ -1,22 +1,27 @@
 //preprocessor directives
 #include <iostream>
 
-void foo_void()
+// We can use
+
+// Do not use, it's better to use explicit namespaces
+//using namespace std;
+
+/*void foo_void()
 {
     std::cout << "foo!\n";
-}
+}*/
 
 // if no return => undefined behavior
-int foo_return()
+/*int foo_return()
 {
     return 5;
-}
+}*/
 
 // if a parameter is not used, do not name him
-void foo_parameter(int n, double)
+/*void foo_parameter(int n, double)
 {
     std::cout << n << '\n';
-}
+}*/
 
 // forward declaration, not best use case
 // if no definition, linking error
@@ -49,10 +54,12 @@ int main() {
     //std::cout << foo_return() << '\n';
     //foo_parameter(7, 1.2);
 
+    std::cout << add(3, 4) << '\n';
+
     return 0;
 }
 
-int add(int x, int y)
+/*int add(int x, int y)
 {
     return x + y;
-}
+}*/
