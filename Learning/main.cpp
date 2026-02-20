@@ -18,14 +18,18 @@ void foo_parameter(int n, double)
     std::cout << n << '\n';
 }
 
+// forward declaration, not best use case
+// if no definition, linking error
+int add(int x, int y);
+
 int main() {
-    //Copy-initialization
+    // Copy-initialization
     //int width = 5;
 
     // List-initialization (preferred in C++)
-    // int width {5}; OK
-    // int height {5.7}; Not OK, because 5.7 is not an int
-    // width = 5.7; OK, the double will be converted to int
+    //int width {5}; OK
+    //int height {5.7}; Not OK, because 5.7 is not an int
+    //width = 5.7; OK, the double will be converted to int
 
     // If multiple std::cout, prefer \n over std::endl (less flushes)
     //std::cout << "Hello world!" << std::endl;
@@ -39,11 +43,16 @@ int main() {
     //int x;
     //std::cout << x << '\n';
 
-    //side effect: an observable effect of an operator or function beyond producing a return value
+    // side effect: an observable effect of an operator or function beyond producing a return value
 
     //foo_void();
     //std::cout << foo_return() << '\n';
     //foo_parameter(7, 1.2);
 
     return 0;
+}
+
+int add(int x, int y)
+{
+    return x + y;
 }
