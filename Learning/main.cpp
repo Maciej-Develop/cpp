@@ -1,6 +1,23 @@
 //preprocessor directives
 #include <iostream>
 
+void foo_void()
+{
+    std::cout << "foo!\n";
+}
+
+// if no return => undefined behavior
+int foo_return()
+{
+    return 5;
+}
+
+// if a parameter is not used, do not name him
+void foo_parameter(int n, double)
+{
+    std::cout << n << '\n';
+}
+
 int main() {
     //Copy-initialization
     //int width = 5;
@@ -23,5 +40,10 @@ int main() {
     //std::cout << x << '\n';
 
     //side effect: an observable effect of an operator or function beyond producing a return value
+
+    //foo_void();
+    //std::cout << foo_return() << '\n';
+    //foo_parameter(7, 1.2);
+
     return 0;
 }
