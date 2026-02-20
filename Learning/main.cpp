@@ -1,7 +1,8 @@
-//preprocessor directives
+// preprocessor directives
+// do not include source files, only headers
+// "" for your files, <> for external headers
 #include <iostream>
-
-// We can use
+#include "add.h"
 
 // Do not use, it's better to use explicit namespaces
 //using namespace std;
@@ -25,7 +26,7 @@
 
 // forward declaration, not best use case
 // if no definition, linking error
-int add(int x, int y);
+//int add(int x, int y);
 
 int main() {
     // Copy-initialization
