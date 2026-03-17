@@ -2,7 +2,7 @@
 // do not include source files, only headers
 // "" for your files, <> for external headers
 #include <iostream>
-#include "add.h"
+//#include "add.h"
 
 // Do not use, it's better to use explicit namespaces
 //using namespace std;
@@ -55,7 +55,9 @@ int main() {
     //std::cout << foo_return() << '\n';
     //foo_parameter(7, 1.2);
 
-    std::cout << add(3, 4) << '\n';
+    //std::cout << add(3, 4) << '\n';
+
+    //std::cerr << "Test" << '\n';
 
     return 0;
 }
