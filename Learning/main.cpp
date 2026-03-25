@@ -59,6 +59,10 @@ int main() {
 
     //std::cerr << "Test" << '\n';
 
+    // fundamental data types: void, short, int, double, float, bool, char
+    // favor signed version (less problems)
+    // (unsigned are used in bit manipulation and in some unavoidable cases)
+
     return 0;
 }
 
