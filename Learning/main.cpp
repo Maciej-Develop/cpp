@@ -67,6 +67,9 @@ int main() {
 
     // use \ to print special characters like \"
 
+    // make your variables const when you can
+    // prefer const to preprocessor macros
+
     
 
     return 0;
