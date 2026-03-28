@@ -63,6 +63,12 @@ int main() {
     // favor signed version (less problems)
     // (unsigned are used in bit manipulation and in some unavoidable cases)
 
+    // std::boolalpha to print 'true' or 'false'. 0 is false, everything else true
+
+    // use \ to print special characters like \"
+
+    
+
     return 0;
 }
 
