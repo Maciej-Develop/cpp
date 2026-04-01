@@ -70,7 +70,15 @@ int main() {
     // make your variables const when you can
     // prefer const to preprocessor macros
 
-    
+    // compilers have a lot of liberty to optimize programs using :
+    //      - constant folding
+    //      - constant propagation
+    //      - dead code elimination
+    // constant are easier to optimize
+
+    // const vs constexpr
+
+    // std::string
 
     return 0;
 }
