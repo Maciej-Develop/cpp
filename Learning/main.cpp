@@ -80,6 +80,14 @@ int main() {
 
     // std::string
 
+    // operators
+    // int / int = int
+    // int / double or float =  double or float (only one of the operand needed for conversion)
+
+    // ++x (pre-incrementation) vs x++ (post-incrementation)
+
+    
+
     return 0;
 }
 
