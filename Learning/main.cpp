@@ -85,6 +85,11 @@ int main() {
     // int / double or float =  double or float (only one of the operand needed for conversion)
 
     // ++x (pre-incrementation) vs x++ (post-incrementation)
+    // prefixes are more performant
+
+    // c ? x : y (If c is true then  x, otherwise  y)
+
+    // comparing two floating can provoke if one of the number was calculated (rounding error)
 
     
 
