@@ -107,7 +107,12 @@ int main() {
     // Shadowing (to avoid) : a variable with the same name as a variable from a higher level "hides" it
 
     // best practice : Give identifiers internal linkage when you have an explicit reason to disallow access from other files.
-    // const global variable have internal linkage by default
+    // const global variables have internal linkage by default
+    // non-const global variables and functions have external linkage by default
+
+    // Use local variables instead of global variables whenever possible.
+
+
 
     return 0;
 }
