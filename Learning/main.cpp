@@ -93,7 +93,21 @@ int main() {
 
     // best practice for code block : max level 3 else refactor
 
-    
+    // std::cout << Foo::add(3, 4) << '\n';
+
+    // Scope = where you declare your variable
+    // Linkage = if a identifier refers to the same object
+
+    // best practice : declare variables in the most limited scope
+
+    // best practice for global variable :
+    //      - put g_ in front of the variable's name
+    //      - declare them in a namespace
+
+    // Shadowing (to avoid) : a variable with the same name as a variable from a higher level "hides" it
+
+    // best practice : Give identifiers internal linkage when you have an explicit reason to disallow access from other files.
+    // const global variable have internal linkage by default
 
     return 0;
 }

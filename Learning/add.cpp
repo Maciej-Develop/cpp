@@ -1,7 +1,11 @@
 // always include the header file
+#include <iostream>
 #include "add.h"
 
-int add(int x, int y)
-{
-    return x + y;
+namespace Foo {
+    int add(int x, int y)
+    {
+        std::cout << "Foo::add" << '\n';
+        return x + y;
+    }
 }
