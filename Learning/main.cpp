@@ -91,6 +91,8 @@ int main() {
 
     // comparing two floating can provoke if one of the number was calculated (rounding error)
 
+    // best practice for code block : max level 3 else refactor
+
     
 
     return 0;
