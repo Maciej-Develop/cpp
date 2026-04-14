@@ -2,6 +2,8 @@
 // do not include source files, only headers
 // "" for your files, <> for external headers
 #include <iostream>
+
+#include "constants.h"
 //#include "add.h"
 
 // Do not use, it's better to use explicit namespaces
@@ -114,8 +116,14 @@ int main() {
 
     // avoid using the inline keyword (modern compilers make the decision if a function should be expanded inline)
 
+    // std::cout << constants::PI << '\n';
 
+    // Prefer explicit namespace qualifiers over using-statements.
 
+    // Prefer unnamed namespaces when you have content you want to keep local to a translation unit.
+    // Avoid unnamed namespaces in header files
+
+    
     return 0;
 }
 
