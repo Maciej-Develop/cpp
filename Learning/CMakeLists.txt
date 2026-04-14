@@ -8,4 +8,5 @@ set(CMAKE_CXX_FLAGS "-Wall -pedantic-errors")
 
 add_executable(Learning main.cpp
         add.cpp
-        add.h)
+        add.h
+        constants.h)

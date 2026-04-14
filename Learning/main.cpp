@@ -112,6 +112,8 @@ int main() {
 
     // Use local variables instead of global variables whenever possible.
 
+    // avoid using the inline keyword (modern compilers make the decision if a function should be expanded inline)
+
 
 
     return 0;
