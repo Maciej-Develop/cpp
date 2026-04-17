@@ -123,6 +123,14 @@ int main() {
     // Prefer unnamed namespaces when you have content you want to keep local to a translation unit.
     // Avoid unnamed namespaces in header files
 
+    // the constexpr if needs a constexpr variable (the if will be evaluated at compile-time)
+    /*constexpr double gravity {9.81};
+    if constexpr (gravity == 9.81) {
+        std::cout << "gravity normal" << '\n';
+    }*/
+
+    // in a switch, don't forget the default at the end of it and the break after each case
+
     
     return 0;
 }
