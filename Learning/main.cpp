@@ -130,6 +130,21 @@ int main() {
     }*/
 
     // in a switch, don't forget the default at the end of it and the break after each case
+    // prefer a switch over an if-else when testing a simple expression
+
+    // avoir goto statement
+    /*std::cout << "start" << '\n';
+    //goto end;
+    std::cout << "in between" << '\n';
+    //end:
+    std::cout << "end" << '\n';
+    */
+
+    // for(;;) == while(true)
+
+    // use break,continue and early returns to simplify your loops/functions
+
+    // random numbers in <random>
 
     
     return 0;
