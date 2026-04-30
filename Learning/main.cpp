@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "constants.h"
-//#include "add.h"
+#include "add.h"
 
 // Do not use, it's better to use explicit namespaces
 //using namespace std;
@@ -147,6 +147,14 @@ int main() {
     // random numbers in <random>
 
     // use external frameworks for testing (ch 9)
+
+    // @TODO ch 10 skipped
+
+    // aliases and typedef's can simplify your code
+
+    // Foo::add(1,1);
+    // Foo::add(2.0,2.0);
+    // Foo::add(1,2.0); doesn't know which version to choose
 
     return 0;
 }

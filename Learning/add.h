@@ -2,6 +2,11 @@
 #define LEARNING_ADD_H
 
 // write documentation in the header files
-int add(int, int);
+namespace Foo {
+    int add(int, int);
+
+    int add(double, double);
+}
+
 
 #endif //LEARNING_ADD_H
