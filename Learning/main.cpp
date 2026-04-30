@@ -28,7 +28,20 @@
 
 // forward declaration, not best use case
 // if no definition, linking error
-//int add(int x, int y);
+// int add(int x, int y);
+
+// deleted every other version of the printInt function (ex: no convertion)
+/*void printInt(int x) {
+    std::cout << x << '\n';
+}
+template <typename T>
+void printInt(T x) = delete;*/
+
+/*template <typename T>
+T max(T x, T y)
+{
+    return (x < y) ? y : x;
+}*/
 
 int main() {
     // Copy-initialization
@@ -154,8 +167,16 @@ int main() {
 
     // Foo::add(1,1);
     // Foo::add(2.0,2.0);
-    // Foo::add(1,2.0); doesn't know which version to choose
+    // Foo::add(1,2.0); // doesn't know which version to choose
+    // Foo::add(1.0,2); // error cause the function is deleted
+    // the compiler will always look for the best match if multiple possibilities => ambiguous
 
+    // printInt('a');
+
+    // put the values of the default arguments in the header and in the implementation
+
+    // std::cout << max(1, 2) << '\n';
+    // std::cout << max(1.0, 2.0) << '\n';
     return 0;
 }
 

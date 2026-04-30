@@ -6,6 +6,8 @@ namespace Foo {
     int add(int, int);
 
     int add(double, double);
+
+    int add(double, int) = delete;
 }
 
 
