@@ -177,6 +177,9 @@ int main() {
 
     // std::cout << max(1, 2) << '\n';
     // std::cout << max(1.0, 2.0) << '\n';
+
+    // use templates for generic code that can work with a wide variety of types
+    
     return 0;
 }
 
